@@ -1,0 +1,28 @@
+/* can't touch this 🔨 */
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item-1 {
+  background-color: lightblue;
+}
+
+.grid-item-2 {
+  background-color: lightcoral;
+}
+
+.grid-item-3 {
+  background-color: lightgreen;
+}
+
+.grid-item-4 {
+  background-color: lightsalmon
+}
+
+.grid-item-5 {
+  background-color: lightseagreen;
+}
+/* can't touch this 🔨 */
+

@@ -1,0 +1,43 @@
+/* do not touch this */
+.flex-container {
+  width: 85%; 
+  height: 200px; 
+  border: 1px solid #000;
+  margin: 25px auto;
+  display: flex;
+  position: relative;
+}
+
+.flex-container-06 {
+  align-items: flex-end;
+}
+
+.flex-item {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 75px; 
+  height: 75px; 
+  border: 1px solid red; 
+  background-color: #000;
+  color: #fff; 
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.underlay {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+  background-color: lightblue;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  font-size: 150px;
+  font-weight: bold; 
+  color: #fff;
+}
+/* do not touch this */
