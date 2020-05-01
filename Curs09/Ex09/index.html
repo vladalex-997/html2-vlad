@@ -14,10 +14,13 @@
 
       button.addEventListener('click', () => {
         let height = expanded ? '250px' : '600px';
+        let text = expanded ? 'Grow' : 'Shrink';
 
         Array.from(flexContainers).forEach((flexContainer) => {
           flexContainer.style.height = height;
         });
+
+        button.innerText = text;
 
         expanded = !expanded;
       });
@@ -41,7 +44,7 @@
 
   <div class="flex-container flex-container-02">
     <div class="underlay">2</div>
-    
+
     <div class="flex-item">1</div>
     <div class="flex-item">2</div>
     <div class="flex-item">3</div>
@@ -50,7 +53,7 @@
 
   <div class="flex-container flex-container-03">
     <div class="underlay">3</div>
-    
+
     <div class="flex-item">1</div>
     <div class="flex-item">2</div>
     <div class="flex-item">3</div>
@@ -68,7 +71,7 @@
 
   <div class="flex-container flex-container-05">
     <div class="underlay">5</div>
-    
+
     <div class="flex-item">1</div>
     <div class="flex-item">2</div>
     <div class="flex-item">3</div>
@@ -77,7 +80,7 @@
 
   <div class="flex-container flex-container-06">
     <div class="underlay">6</div>
-    
+
     <div class="flex-item">1</div>
     <div class="flex-item">2</div>
     <div class="flex-item">3</div>
