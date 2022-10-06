@@ -26,3 +26,9 @@ ul {
     padding: 10px 20px;
   }
 }
+
+a {
+  .all-visited & {
+    text-decoration: line-through;
+  }
+}

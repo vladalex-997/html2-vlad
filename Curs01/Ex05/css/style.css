@@ -22,4 +22,8 @@ ul a:hover {
   padding: 10px 20px;
 }
 
+.all-visited a {
+  text-decoration: line-through;
+}
+
 /*# sourceMappingURL=style.css.map */
