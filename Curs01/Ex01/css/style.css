@@ -34,6 +34,14 @@ body {
   .box-2 {
     display: none;
   }
+
+  .box-1 {
+    display: none;
+  }
+
+  body {
+    padding: 15px;
+  }
 }
 
 body > h1 {
@@ -63,12 +71,24 @@ body > h2 {
   .box-4 {
     display: none;
   }
+  .box-2 {
+    color: white;
+    border: 1px solid yellow;
+  }
 }
 
 @media (min-width: 1200px) {
   .box-5 {
     display: none;
   }
+
+  body > h3 {
+    display: none;
+  }
+}
+
+body > h3 {
+  display: none;
 }
 
 @media (min-width: 992px) {
@@ -79,10 +99,20 @@ body > h2 {
   .box-4 {
     color: red;
   }
+
+  .box-1 {
+    display: none;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 1000px) {
   body > h2 {
     display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  body > h3 {
+    color: red;
   }
 }
