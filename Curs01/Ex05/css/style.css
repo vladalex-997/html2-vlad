@@ -4,6 +4,22 @@ ul a {
 ul a:hover {
   color: red;
 }
+ul a:active {
+  color: purple;
+}
+ul a:visited {
+  color: green;
+}
+
+ol a:hover {
+  color: magenta;
+}
+ol a:active {
+  color: pink;
+}
+ol a:visited {
+  color: lightcoral;
+}
 
 .para {
   padding: 10px 20px;

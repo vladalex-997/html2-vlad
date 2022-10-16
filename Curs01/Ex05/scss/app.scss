@@ -5,6 +5,30 @@ ul {
     &:hover {
       color: red;
     }
+
+    &:active {
+      color: purple;
+    }
+
+    &:visited {
+      color: green;
+    }
+  }
+}
+
+ol {
+  a {
+    &:hover {
+      color: magenta;
+    }
+
+    &:active {
+      color: pink;
+    }
+
+    &:visited {
+      color: lightcoral;
+    }
   }
 }
 
