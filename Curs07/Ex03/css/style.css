@@ -8,12 +8,22 @@ body {
 }
 
 @keyframes blink {
-  to {
+  from {
     opacity: 1;
   }
 
-  from {
+  to {
     opacity: 0;
+  }
+}
+
+@keyframes coloralternate {
+  from {
+    color: white;
+  }
+
+  to {
+    color: black;
   }
 }
 
@@ -27,15 +37,44 @@ body {
   }
 }
 
+@keyframes bounce2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
 .loader {
   text-transform: uppercase;
   font-family: sans-serif;
   animation: blink 1s linear infinite alternate;
 }
 
+.loader2 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  animation: coloralternate 1s linear infinite alternate;
+}
+
 .loader-dots {
   display: flex;
   gap: 8px;
+}
+
+.loader-squares {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.loader-squares .square {
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-color: black;
+  animation: bounce2 0.8s linear infinite alternate forwards;
 }
 
 .loader-dots .box {
@@ -53,4 +92,12 @@ body {
 
 .loader-dots .box:nth-child(3) {
   animation-delay: 0.8s;
+}
+
+.loader-squares .square:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loader-squares .square:nth-child(3) {
+  animation-delay: 0.5s;
 }
