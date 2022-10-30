@@ -36,3 +36,55 @@
 .grid-item-5 {
   grid-column: 1 / span 2;
 }
+
+.grid-item-1-p1 {
+  order: -2;
+}
+
+.grid-item-4-p1 {
+  order: -2;
+}
+
+.grid-item-4-p2 {
+  order: -3;
+}
+
+.grid-item-3-p2 {
+  order: -2;
+}
+
+.grid-item-5-p2 {
+  order: -2;
+}
+
+.grid-item-2-p2 {
+  order: -1;
+}
+
+.grid-item-3-p3 {
+  order: -2;
+}
+
+.grid-item-5-p3 {
+  order: -2;
+}
+
+.grid-item-2-p3 {
+  order: -1;
+}
+
+.grid-item-4-p4 {
+  order: -2;
+}
+
+.grid-item-1-p4 {
+  order: -2;
+}
+
+.grid-item-5-p4 {
+  order: -2;
+}
+
+.grid-item-3-p4 {
+  order: -1;
+}

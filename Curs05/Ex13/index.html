@@ -44,7 +44,7 @@
 
     <main>
 
-      <section class="container">
+      <section class="container mt-4">
         <header class="row">
           <div class="col">
             <h2>Reteta</h2>
@@ -92,6 +92,27 @@
 
             <!-- insert descriere scurta -->
 
+            <div class="input-group">
+              <label
+                for="recipe-description-short"
+                class="input-group-text"
+              >
+                Descriere scurta *
+              </label>
+
+              <textarea
+                class="form-control"
+                name="recipe-description-short"
+                id="recipe-description-short"
+                cols="16"
+                rows="5"
+                placeholder="Descriere scurta *"
+                required
+              ></textarea>
+            </div>
+
+
+
           </div>
 
           <div class="col-12 col-lg-6 mt-2 mt-lg-0 d-flex flex-column gap-2">
@@ -133,7 +154,7 @@
 
       </section>
 
-      <section class="container">
+      <section class="container mt-4">
         <header class="row">
           <div class="col">
             <h2>Autor</h2>
@@ -174,9 +195,46 @@
                 placeholder="Numele autorului *"
               >
             </div>
+
+            <div class="input-group">
+              <label
+                for="recipe-author-surname"
+                class="input-group-text"
+              > Prenumele autorului *
+              </label>
+
+              <input
+                type="text"
+                name="recipe-author-surname"
+                id="recipe-author-surname"
+                class="form-control"
+                required
+                placeholder="Prenumele autorului *"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="recipe-author-email"
+                class="input-group-text"
+              > Email *
+              </label>
+
+              <input
+                type="email"
+                name="recipe-author-email"
+                id="recipe-author-email"
+                class="form-control"
+                required
+                placeholder="Email *"
+              >
+            </div>
+
+
+
           </div>
 
-          <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+          <div class="col-12 col-lg-6 d-flex flex-column mt-2 mt-lg-0 gap-2">
             <div class="input-group">
               <label
                 for="author-website"
@@ -197,7 +255,7 @@
         </fieldset>
       </section>
 
-      <section class="container">
+      <section class="container mt-4">
         <header class="row">
           <div class="col">
             <h2>Ingrediente</h2>
@@ -205,7 +263,7 @@
         </header>
 
         <fieldset class="row">
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
 
             <div class="input-group">
               <label
@@ -232,8 +290,57 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2 mt-2 mt-lg-0">
             <h3>Lista ingrediente</h3>
+            <ul>
+              <li>
+                <span>10g ulei</span>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  title="Editeaza"
+                >Editeaza
+                </button>
+                <button
+                  class="btn btn-danger"
+                  type="button"
+                  title="Sterge"
+                >Sterge
+                </button>
+              </li>
+
+              <li class="mt-2">
+                <span>200g ceapa</span>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  title="Editeaza"
+                >Editeaza
+                </button>
+                <button
+                  class="btn btn-danger"
+                  type="button"
+                  title="Sterge"
+                >Sterge
+                </button>
+              </li>
+
+              <li class="mt-2">
+                <span>200g ardei gras</span>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  title="Editeaza"
+                >Editeaza
+                </button>
+                <button
+                  class="btn btn-danger"
+                  type="button"
+                  title="Sterge"
+                >Sterge
+                </button>
+              </li>
+            </ul>
           </div>
         </fieldset>
       </section>
@@ -246,10 +353,83 @@
         </header>
 
         <fieldset class="row">
-          <div class="col-12 col-lg-6">
-            insert code here
-            amebele butoane type button
+          <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+            <div class="input-group">
+              <label
+                for="step-title"
+                class="input-group-text"
+              >Titlu pas *
+              </label>
+
+              <input
+                class="form-control"
+                type="text"
+                name="step-title"
+                id="step-title"
+                required
+                placeholder="Titlu pas *"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="substep-title"
+                class="input-group-text"
+              >Subtitlu pas *
+              </label>
+
+              <input
+                class="form-control"
+                type="text"
+                name="substep-title"
+                id="substep-title"
+                required
+                placeholder="Subtitlu pas *"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="step-description"
+                class="input-group-text"
+              >
+                Descriere pas *
+              </label>
+
+              <textarea
+                class="form-control"
+                name="step-description"
+                id="step-description"
+                cols="16"
+                rows="10"
+                placeholder="Descriere pas *"
+                required
+              ></textarea>
+            </div>
+
+            <div class="col text-end">
+              <button
+                class="btn btn-outline-danger btn"
+                type="button"
+                title="Reseteaza"
+              >Reseteaza
+              </button>
+
+              <button
+                class="btn btn-primary btn"
+                title="Trimite"
+                type="button"
+              >Trimite reteta
+              </button>
+
+
+            </div>
+
+
           </div>
+
+
+
         </fieldset>
       </section>
     </main>
